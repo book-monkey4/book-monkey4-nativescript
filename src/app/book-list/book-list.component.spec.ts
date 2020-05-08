@@ -72,7 +72,7 @@ describe('BookListComponent', () => {
   beforeEach(async(() => {
     TestBed.createComponent(TestOutletComponent);
     fixture = TestBed.createComponent(BookListComponent);
-    service = TestBed.get(BookStoreService);
+    service = TestBed.inject(BookStoreService);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

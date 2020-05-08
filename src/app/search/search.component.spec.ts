@@ -57,7 +57,7 @@ describe('SearchComponent', () => {
     fixture = TestBed.createComponent(SearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-    bs = TestBed.get(BookStoreService);
+    bs = TestBed.inject(BookStoreService);
   });
 
   it('should return objects containing the given search term', () => {
