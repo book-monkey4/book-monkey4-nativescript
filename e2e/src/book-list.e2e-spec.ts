@@ -12,7 +12,7 @@ describe('Book List Page', function() {
 
   it('should navigate to details page by ISBN', () => {
     const detailsPage = listPage.navigateTo().clickOnFirstBook();
-    expect(detailsPage.getUrl()).toContain('/books/9783864906466');
+    expect(detailsPage.getUrl()).toContain('/books/9783864907791');
     expect(detailsPage.getHeaderText()).toBe('Angular');
   });
 });
