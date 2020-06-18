@@ -1,8 +1,7 @@
 {
+  "main": "main.tns.js",
   "android": {
-    "v8Flags": "--expose_gc"
-  },
-  "main": "main.js",
-  "name": "migration-ng",
-  "version": "4.1.0"
+    "v8Flags": "--expose_gc",
+    "markingMode": "none"
+  }
 }

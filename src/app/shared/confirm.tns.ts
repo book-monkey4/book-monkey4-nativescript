@@ -1,4 +1,4 @@
-import { confirm } from 'tns-core-modules/ui/dialogs';
+import { confirm } from '@nativescript/core/ui/dialogs';
 
 export function confirmDialog(msg: string) {
   return confirm({
