@@ -58,17 +58,15 @@ describe('BookDetailsComponent', () => {
           { path: ':isbn', component: BookDetailsComponent }
         ])
       ]
-    })
-    .compileComponents();
+    }).compileComponents();
   }));
 
-  beforeEach(async(() => {
-    TestBed.createComponent(StubOutletComponent);
+  beforeEach(() => {
     fixture = TestBed.createComponent(BookDetailsComponent);
     component = fixture.componentInstance;
     nativeEl = fixture.nativeElement;
     fixture.detectChanges();
-  }));
+  });
 
   it('should fetch a single book', () => {
     expect(component.book.isbn).toBe('111');

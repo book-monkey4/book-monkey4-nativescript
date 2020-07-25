@@ -65,17 +65,15 @@ describe('BookListComponent', () => {
           { path: ':isbn', component: TestDetailsComponent }
         ])
       ]
-    })
-    .compileComponents();
+    }).compileComponents();
   });
 
-  beforeEach(async(() => {
-    TestBed.createComponent(TestOutletComponent);
+  beforeEach(() => {
     fixture = TestBed.createComponent(BookListComponent);
     service = TestBed.inject(BookStoreService);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  }));
+  });
 
   it('should display books', () => {
     let receivedBooks: Book[];
