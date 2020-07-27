@@ -1,6 +1,6 @@
 {
   "name": "book-monkey",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "scripts": {
     "android": "tns run android --env.aot",
     "ios": "tns run ios --env.aot",
