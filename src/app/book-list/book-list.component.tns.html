@@ -4,7 +4,7 @@
 <ScrollView>
   <ActivityIndicator [busy]="!books"></ActivityIndicator>
   <Label *ngIf="books && !books.length" text="Es wurden noch keine Bücher eingetragen."></Label>
-  <ListView [items]="books">
+  <ListView *ngIf="books" [items]="books">
     <ng-template let-item="item">
       <GridLayout columns="*,4*" [nsRouterLink]="item.isbn">
         <bm-book-list-item [book]="item"></bm-book-list-item>

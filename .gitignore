@@ -48,7 +48,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
-# Extra for BookMonkey
-build-workspace
-.angulardoc.json
